@@ -1,0 +1,55 @@
+baseURL: 'http://confidentialcontainers.org/'
+languageCode: en-us
+title: Confidential Containers
+theme: docsy
+contentDir: content/en
+defaultContentLanguage: en
+enableRobotsTXT: true
+enableGitInfo: true
+permalinks:
+  blog: '/:section/:year/:month/:day/:slug/'
+params:
+  copyright: "Confidential Containers Contributors"
+  version_menu: Releases
+  version: 0.7.0
+  github_repo: 'https://github.com/confidential-containers/confidentialcontainers.org'
+  github_project_repo: 'https://github.com/confidential-containers'
+  ui:
+    breadcrumb_disable: false
+    footer_about_disable: false
+    navbar_logo: true
+    navbar_translucent_over_cover_disable: false
+    sidebar_menu_compact: true
+    sidebar_menu_foldable: true
+    sidebar_search_disable: false
+    feedback:
+      enable: true
+      'yes': >-
+        Glad to hear it! Please <a
+        href="https://github.com/confidential-containers/confidential-containers/issues/new">tell
+        us how we can improve</a>.
+      'no': >-
+        Sorry to hear that. Please <a
+        href="https://github.com/confidential-containers/confidential-containers/issues/new">tell
+        us how we can improve</a>.
+  links:
+    developer:
+    - name: GitHub
+      url: 'https://github.com/confidential-containers'
+      icon: fab fa-github
+      desc: Development takes place here!
+    - name: Slack
+      url: 'https://communityinviter.com/apps/cloud-native/cncf'
+      icon: fab fa-slack
+      desc: Chat with other project developers
+
+module:
+  proxy: direct
+  hugoVersion:
+    extended: true
+    min: 0.110.0
+  imports:
+  - path: github.com/google/docsy
+    disable: false
+  - path: github.com/google/docsy/dependencies
+    disable: false
